@@ -24,9 +24,6 @@ cloudCredentialSecretName: example
 # specify cloud provider, options are amazonec2, digitalocean, azure, vsphere or custom
 cloudprovider: ""
 
-# enable network policy
-enableNetworkPolicy: false
-
 kubernetesVersion: "v1.21.0-alpha2+rke2r1"
 
 # specify extra env variables in cluster-agent deployment

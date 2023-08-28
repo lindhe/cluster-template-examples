@@ -24,7 +24,6 @@ spec:
     fqdn: {{ .Values.rke.localClusterAuthEndpoint.fqdn }}
     caCerts: {{ .Values.rke.localClusterAuthEndpoint.caCerts }}
   {{- end }}
-  # enable network policy
   enableNetworkPolicy: true
   rkeConfig:
     {{- if ne .Values.cloudprovider "custom" }}
