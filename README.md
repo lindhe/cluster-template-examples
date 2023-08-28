@@ -29,9 +29,6 @@ enableNetworkPolicy: false
 
 kubernetesVersion: "v1.21.0-alpha2+rke2r1"
 
-# specify rancher helm chart values deployed into downstream cluster
-rancherValues: {}
-
 # specify extra env variables in cluster-agent deployment
 # agentEnvs:
 #  - name: HTTP_PROXY
