@@ -43,26 +43,6 @@ rke:
   # fqdn: foo.bar.example
   # specify cacert of local access endpoint
   # caCerts: ""
-
-  # Specify upgrade options
-  upgradeStrategy:
-    controlPlaneDrainOptions:
-      enabled: false
-      # deleteEmptyDirData: false
-      # disableEviction: false
-      # gracePeriod: 0
-      # ignoreErrors: false
-      # skipWaitForDeleteTimeoutSeconds: 0
-      # timeout: 0
-    workerDrainOptions:
-      enabled: false
-      # deleteEmptyDirData: false
-      # disableEviction: false
-      # gracePeriod: 0
-      # ignoreErrors: false
-      # skipWaitForDeleteTimeoutSeconds: 0
-      # timeout: 0
-    workerConcurrency: "1"
 ```
 
 To provide your own configuration, modify the original values.yaml and create your own version, and pass it to helm. For example:
