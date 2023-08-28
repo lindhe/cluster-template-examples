@@ -40,3 +40,8 @@ monitoring:
   # specify cutsom values set
   # values:
   #   foo: bar
+
+# specify extra env variables in cluster-agent deployment
+# agentEnvs:
+#  - name: HTTP_PROXY
+#     value: foo.bar

@@ -4,43 +4,7 @@ This project contains rke2 cluster template helm chart, which can be applied wit
 
 ### How to use
 
-The general cluster configuration options are available through [values.yaml](./charts/values.yaml).
-
-```yaml
-# cluster specific values
-cluster:
-  # specify cluster name
-  name: cluster-example
-
-  # specify cluster labels
-  labels: {}
-
-  # specify cluster annotations
-  annotations: {}
-
-# specify cloud credential secret name, do not need to be provided if using custom driver
-cloudCredentialSecretName: example
-
-# specify cloud provider, options are amazonec2, digitalocean, azure, vsphere or custom
-cloudprovider: ""
-
-kubernetesVersion: "v1.21.0-alpha2+rke2r1"
-
-# specify extra env variables in cluster-agent deployment
-# agentEnvs:
-#  - name: HTTP_PROXY
-#     value: foo.bar
-
-# general RKE options
-rke:
-  # enable local auth endpoint
-  localClusterAuthEndpoint:
-    enabled: false
-  # specify fqdn of local access endpoint
-  # fqdn: foo.bar.example
-  # specify cacert of local access endpoint
-  # caCerts: ""
-```
+The general cluster configuration options are available through [charts/values.yaml](charts/values.yaml).
 
 To provide your own configuration, modify the original values.yaml and create your own version, and pass it to helm. For example:
 
