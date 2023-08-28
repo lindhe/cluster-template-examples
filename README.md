@@ -36,9 +36,6 @@ kubernetesVersion: "v1.21.0-alpha2+rke2r1"
 
 # general RKE options
 rke:
-  # specify rancher helm chart values deployed into downstream cluster
-  chartValues: {}
-
   # controlplane/etcd configuration settings
   controlPlaneConfig:
     # Path to the file that defines the audit policy configuration
