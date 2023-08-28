@@ -36,35 +36,6 @@ kubernetesVersion: "v1.21.0-alpha2+rke2r1"
 
 # general RKE options
 rke:
-  # worker configuration settings
-  workerConfig:
-  - config:
-      # Node name
-      # node-name: ""
-      # Disable embedded containerd and use alternative CRI implementation
-      # container-runtime-endpoint: ""
-      # Override default containerd snapshotter (default: "overlayfs")
-      # snapshotter: ""
-      # IP address to advertise for node
-      # node-ip: "1.1.1.1"
-      # Kubelet resolv.conf file
-      # resolv-conf: ""
-      # Customized flag for kubelet process
-      # kubelet-arg: ""
-      # Customized flag for kube-proxy process
-      # kube-proxy-arg: ""
-      # Kernel tuning behavior. If set, error if kernel tunables are different than kubelet defaults. (default: false)
-      # protect-kernel-defaults: false
-      # Enable SELinux in containerd (default: false)
-      # selinux: true
-      # Cloud provider name
-      # cloud-provider-name: ""
-      # Cloud provider configuration file path
-      # cloud-provider-config: ""
-    machineLabelSelector:
-      matchLabels:
-        foo: bar
-
   # enable local auth endpoint
   localClusterAuthEndpoint:
     enabled: false
